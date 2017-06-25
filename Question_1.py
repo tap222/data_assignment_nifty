@@ -30,8 +30,11 @@ for i in range(len(df)-1):
     ...:             date.append(row2['Date'])
     ...:             turnover.append(row2['Turnover (Rs. Cr)'])
     ...:             cnt_neg += 1
+                     count = 0
     ...:     else:
+                 count = 0
     ...:         continue
+                
     ...:     
 print('Negative:',cnt_neg)
 dt = pd.DataFrame(date,columns=['Date'])
